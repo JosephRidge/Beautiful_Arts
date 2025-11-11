@@ -1,94 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beau-Arts</title>
-    <link rel="stylesheet" href="assets/style/css/main.min.css">
-    <link rel="shortcut icon" href="assets/svg/logo.svg" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/css/main.min.css" />
+    <link rel="shortcut icon" href="assets/svg/logo.svg" type="image/x-icon" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        #home {
-            background-image: url("assets/images/museum_art.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
+      #home {
+        background-image: url("assets/images/museum_art.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     </style>
-</head>
+  </head>
 
-<body class="min-vh-100">
+  <body class="min-vh-100">
     <!--  navigation bar -->
     <nav class="navbar navbar-expand-lg bg-primary position-relative z-3">
-        <div class="container py-4">
-            <a class="navbar-brand" href="#home">
-                <img src="assets/svg/logo.svg" alt="logo" class="img-fluid me-4" width="40" rcset="">
-            </a>
-            <button class="navbar-toggler bg-warning  rounded-5 border-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
+      <div class="container py-4">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="assets/svg/logo.svg"
+            alt="logo"
+            class="img-fluid me-4"
+            width="40"
+            rcset=""
+          />
+        </a>
+        <button
+          class="navbar-toggler bg-warning rounded-5 border-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                more
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#sponsorship">Sponsorship</a>
+                </li>
+                <li><a class="dropdown-item" href="#about-us">About US</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#contact-us">Contact US</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 rounded-5"
+              type="search"
+              placeholder=" Find art..."
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-warning rounded-5 px-4 py-2"
+              type="submit"
+            >
+              Search
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-light" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            more
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#sponsorship">Sponsorship</a></li>
-                            <li><a class="dropdown-item" href="#about-us">About US</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#contact-us">Contact US</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 rounded-5" type="search" placeholder=" Find art..."
-                        aria-label="Search" />
-                    <button class="btn btn-outline-warning rounded-5 px-4 py-2" type="submit">Search</button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
 
     <!-- home section -->
 
     <section id="home" class="min-vh-100">
-        <div class="position-absolute top-0 start-0 w-100 vh-100 bg-primary opacity-50 z-1"></div>
-        <div class="position-relative py-5 z-3">
-            <div class="container p-5">
-                <h1 class="display-1 fw-bold text-warning">Beautiful Arts Gallery</h1>
-                <h3 class="display-6 text-warning">Museum of Arts</h3>
-                <h5 class="fs-6 text-warning">a blend of modernand midevil ages</h5>
-                <p class="lead fs-2 fw-lighter text-light mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quaerat
-                    ad optio sapiente itaque?
-                    Vel delectus quisquam, impedit distinctio ea harum alias totam mollitia. Expedita quaerat nostrum
-                    aut in vitae!</p>
+      <div
+        class="position-absolute top-0 start-0 w-100 vh-100 bg-primary opacity-50 z-1"
+      ></div>
+      <div class="position-relative py-5 z-3">
+        <div class="container p-5">
+          <h1 class="display-1 fw-bold text-warning">Beautiful Arts Gallery</h1>
+          <h3 class="display-6 text-warning">Museum of Arts</h3>
+          <h5 class="fs-6 text-warning">a blend of modernand midevil ages</h5>
+          <p class="lead fs-2 fw-lighter text-light mt-5">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+            quaerat ad optio sapiente itaque? Vel delectus quisquam, impedit
+            distinctio ea harum alias totam mollitia. Expedita quaerat nostrum
+            aut in vitae!
+          </p>
 
-                <button type="button" class="btn  btn-lg btn-warning mt-4"> support us </button>
-            </div>
-
+          <button type="button" class="btn btn-lg btn-warning mt-4">
+            support us
+          </button>
         </div>
-
-
-
+      </div>
     </section>
-</body>
 
+    <!--Gallery section-->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Gallery</h2>
+          <p class="lead fs-4 text-muted">
+            Explore this beautifying gallery arts.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!--Item-one-->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/images/image.jpg"
+                class="card-img-top"
+                alt="Art 1"
+              />
+              <div class="card-body">
+                <h6 class="card-title">A colossal bombardment of Paints</h6>
+                <p class="card-text">
+                  A beautiful potrayal of paintings coming together to create a
+                  state of the art masterpiece.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Item-two-->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/images/image1.jpg"
+                class="card-img-top"
+                alt="Art 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Afrique Art</h5>
+                <p class="card-text">
+                  A piece of art from the past generation, very vibrant and
+                  appealing
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Item-three-->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/images/image2.jpg"
+                class="card-img-top"
+                alt="Art 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Detailed Potrait Of Elegance</h5>
+                <p class="card-text">
+                  An elegant view of various articious pictures brought together
+                  to bring out outstanding artistic elegance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--About US-->
+    <section id="about_us" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">About Us</h2>
+          <p class="lead fs-4 text-muted">
+            This are our core values and mission.
+          </p>
+        </div>
+        <div class="row align-items-center">
+          <!--<div class="col-md-5 mb-4 mb-md-0">
+            <img
+              src="assets/images/museum_art.jpg"
+              class="img-fluid rounded shadow"
+              style="
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                max-height: 600px;
+              "
+              alt="About Beauty-Arts-2"
+            />
+          </div>-->
+          <div class="col-md-7">
+            <h5 class="about_us">Description: Who We Are</h5>
+            <p class="about_us" style="text-align: center">
+              At Lumina Beauty Arts, we believe that beauty is a powerful and
+              personal form of self-expression. We are a collective of dedicated
+              artists and enthusiasts committed to transforming the beauty
+              industry through education, innovation, and artistry. More than
+              just a brand, Lumina is a destination for those who see makeup and
+              beauty rituals as a craft—a way to highlight individual brilliance
+              and build confidence from the inside out. We provide everything
+              from professional masterclasses and bespoke client services to a
+              thoughtfully curated blog, all dedicated to the art and soul of
+              beauty.
+            </p>
+            <br />
+
+            <h5 class="about_us">Our Vision: The Future We See</h5>
+            <p class="about_us" style="text-align: center">
+              Our vision is to cultivate a world where beauty is defined by
+              individuality and empowered self-expression. We strive to be a
+              leading force in shifting industry standards towards inclusivity,
+              sustainability, and artistic integrity. We envision a global
+              community where anyone, regardless of skill level, can access the
+              tools, knowledge, and inspiration to explore their creativity and
+              feel seen, celebrated, and radiantly themselves.
+            </p>
+            <br />
+
+            <h5 class="about_us">Our Founders: The Heart of Lumina</h5>
+            <p class="about_us" style="text-align: center">
+              Lumina Beauty Arts was born from the shared passion of Elena Vance
+              and Marcus Thorne. Elena, a renowned makeup artist with over 15
+              years of experience in editorial and film, noticed a gap between
+              high-fashion techniques and the everyday consumer. Marcus, a
+              former cosmetic chemist and branding expert, was driven by a
+              mission to create products that perform brilliantly while adhering
+              to ethical standards. Together, they fused artistic vision with
+              conscious formulation, laying the foundation for a company that
+              honors both art and principle.
+            </p>
+            <br />
+
+            <h5 class="about_us">Our Contributors: The Voices of Lumina</h5>
+            <p class="about_us" style="text-align: center">
+              Our platform is brought to life by a diverse family of talented
+              contributors who are experts in their fields. This includes:
+            </p>
+
+            <ul>
+              <li>
+                Lead Educators: Certified makeup artists who develop and teach
+                our curriculum.
+              </li>
+              <li>
+                Guest Artists: Industry professionals who bring fresh
+                perspectives and specialized techniques to our community.
+              </li>
+              <li>
+                Skincare Specialists: Licensed estheticians who provide expert
+                advice on creating a healthy canvas.
+              </li>
+              <li>
+                Wellness Advocates: Writers and coaches who explore the
+                connection between inner well-being and outer glow.
+              </li>
+            </ul>
+            <p>
+              Together, our contributors ensure that the wisdom shared on our
+              platform is not only trend-forward but also technically sound,
+              inclusive, and holistic.
+            </p>
+            <a href="#contact_us" class="btn btn-dark btn-lg mt-3"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sponsorship-->
+    <section id="Sponsorship" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Sponsorship</h2>
+          <p class="lead fs-4 text-muted">
+            Collaborate with us in supporting the arts and culture.
+          </p>
+        </div>
+        <div class="row row-justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="amount" class="form-label"
+                  >Sponsorship Amount</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="amount"
+                  placeholder="Amount"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Become a Sponsor
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact US-->
+    <section id="contact-us" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="lead fs-4 text-muted">
+            We Would love to get in touch with you!
+          </p>
+        </div>
+        <div class="row-justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="contact_name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact_name"
+                  placeholder="eg @Eugene"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact_email" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contact_email"
+                  placeholder="eg @wanzalaeugenefredrick@gmail.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
